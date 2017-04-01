@@ -25,15 +25,8 @@ public class RequesterService {
     private Map<Long, Requester> requesters = new HashMap<>();
     private static RequesterService instance;
 
-    private RequesterService() {
+    public RequesterService() {
 
-    }
-
-    public static synchronized RequesterService getInstance() {
-        if(RequesterService.instance == null) {
-            RequesterService.instance = new RequesterService();
-        }
-        return RequesterService.instance;
     }
 
     @GET
