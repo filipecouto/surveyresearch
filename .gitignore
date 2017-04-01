@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Target files / Idea Files / iml
+/target
+.idea
+*.iml
