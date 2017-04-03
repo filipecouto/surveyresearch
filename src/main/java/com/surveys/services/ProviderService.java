@@ -25,7 +25,6 @@ public class ProviderService {
      */
 
     private static Map<Long, Provider> providers = new HashMap<>();
-    private static ProviderService instance;
 
     static {
         Provider provider1 = new Provider(1L, "Example Provider");
@@ -39,7 +38,7 @@ public class ProviderService {
     @Produces(MediaType.APPLICATION_JSON)
     public Response list() {
         List providerValues = new ArrayList(providers.values());
-        return Response.status(Response.Status.OK).entity(providers).build();
+        return Response.status(Response.Status.OK).entity(providerValues).build();
     }
 
     @GET

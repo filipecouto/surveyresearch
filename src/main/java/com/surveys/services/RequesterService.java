@@ -21,9 +21,8 @@ public class RequesterService {
      * Create a get of Requester (id)
      */
 
-    private Long id = 0L;
-    private Map<Long, Requester> requesters = new HashMap<>();
-    private static RequesterService instance;
+    private static Long id = 0L;
+    private static Map<Long, Requester> requesters = new HashMap<>();
 
     public RequesterService() {
 

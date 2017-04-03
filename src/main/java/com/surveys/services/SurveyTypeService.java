@@ -24,7 +24,6 @@ public class SurveyTypeService {
      */
 
     private static Map<Long, SurveyType> surveyTypes = new HashMap<>();
-    private static SurveyTypeService instance;
 
     static {
         SurveyType surveyType1 = new SurveyType(1L, "Example1");

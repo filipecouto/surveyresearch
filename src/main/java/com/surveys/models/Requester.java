@@ -10,6 +10,9 @@ public class Requester {
     private String name;
     private String endpoint;
 
+    public Requester() {
+    }
+
     public Requester(Long id, String acronym, String name, String endpoint) {
         this.id = id;
         this.acronym = acronym;
